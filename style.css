@@ -1,0 +1,121 @@
+.Bowser-navbar {
+  background-color: #DE1830;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  position: fixed;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1%;
+  width: 98%;
+}
+
+.Bowser-navbar .Bowser-navbar-brand {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.Bowser-navbar .Bowser-navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Bowser-navbar .Bowser-nav-item {
+  margin-left: 1rem;
+}
+
+.Bowser-navbar .Bowser-nav-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.Bowser-navbar .Bowser-nav-link:hover {
+  color: #ccc;
+}
+
+.Bowser-alert {
+  padding: 1rem;
+  border: 0.01rem solid;
+  border-radius: 0.5rem;
+}
+
+.Bowser-alert.cuerpo {
+  background: -webkit-gradient(linear, left top, left bottom, from(#F5C933), color-stop(#F8DD56), color-stop(#F8DD56), to(#F5C933));
+  background: linear-gradient(to bottom, #F5C933, #F8DD56, #F8DD56, #F5C933);
+  border-color: black;
+  color: #fff;
+}
+
+.Bowser-alert.cabello {
+  background: -webkit-gradient(linear, left top, left bottom, from(#D12409), color-stop(#E23418), color-stop(#E23418), to(#D12409));
+  background: linear-gradient(to bottom, #D12409, #E23418, #E23418, #D12409);
+  border-color: black;
+  color: #222121;
+}
+
+.Bowser-alert.utiles {
+  background: -webkit-gradient(linear, left top, left bottom, from(#151312), color-stop(#B7B2B1), color-stop(#B7B2B1), to(#151312));
+  background: linear-gradient(to bottom, #151312, #B7B2B1, #B7B2B1, #151312);
+  border-color: black;
+  color: #fff;
+}
+
+.Bowser-alert.redondo {
+  border-radius: 50rem;
+}
+
+.Bowser-alert.imagen {
+  background-size: 10%;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT44CdmvHTbkIJYTePpJg_6maBBnEyS2ZBj6w&usqp=CAU");
+}
+
+.Bowser-badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: #090304;
+  background-color: #97E251;
+  border-radius: 0.25em;
+  position: relative;
+}
+
+.Bowser-badge .Bowser-badge-dot {
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+  display: inline-block;
+  width: 0.5em;
+  height: 0.5em;
+  background-color: #ff0000;
+  border-radius: 50%;
+}
+
+.Bowser-badge .Bowser-badge-cuat {
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+  display: inline-block;
+  width: 0.5em;
+  height: 0.5em;
+  background-color: #ff0000;
+}
+
+.Bowser-badge.redondo {
+  border-radius: 50rem;
+}
+
+* {
+  margin: 0;
+}
+/*# sourceMappingURL=style.css.map */

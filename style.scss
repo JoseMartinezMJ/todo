@@ -1,0 +1,148 @@
+// Variables  Navbar
+$Bowser-navbar-background: #DE1830;
+$Bowser-navbar-color: #fff;
+$Bowser-navbar-brand-color: #fff;
+$Bowser-navbar-link-color: #fff;
+$Bowser-navbar-link-hover-color: #ccc;
+
+// Variables  alerta
+$Bowser-alert-padding: 1rem;
+$Bowser-alert-border-width: 0.01rem;
+$Bowser-alert-border-radius: 0.5rem;
+
+// Alerta con gradiente cuerpo
+$Bowser-alert-cuerpo-background: linear-gradient(to bottom, #F5C933 ,#F8DD56,#F8DD56 , #F5C933);
+$Bowser-alert-cuerpo-border-color: darken(#080100 , 10%);
+$Bowser-alert-cuerpo-text-color: #fff;
+
+// Alerta con gradiente cabello
+$Bowser-alert-cabello-background: linear-gradient(to bottom, #D12409 , #E23418,#E23418,#D12409 );
+$Bowser-alert-cabello-border-color: darken(#080100 , 10%);
+$Bowser-alert-cabello-text-color: #222121;
+
+// Alerta con gradiente utiles
+$Bowser-alert-utiles-background: linear-gradient(to bottom, #151312  , #B7B2B1,#B7B2B1  ,#151312  );
+$Bowser-alert-utiles-border-color: darken(#080100 , 10%);
+$Bowser-alert-utiles-text-color: #fff;
+$Bowser-alert-border-radius-2:50rem;
+
+
+// Variables badge
+$Bowser-badge-bg-color: #97E251 ;
+$Bowser-badge-text-color: #090304;
+$Bowser-badge-font-size: 0.8em;
+$Bowser-badge-font-weight: bold;
+$Bowser-badge-padding: 0.25rem 0.5rem;
+$Bowser-badge-border-radius: 0.25em;
+$Bowser-badge-dot-color: #ff0000;
+$Bowser-badge-dot-size: 0.5em;
+$Bowser-badge-radius: 50rem;
+
+// Navbar
+.Bowser-navbar {
+  background-color: $Bowser-navbar-background;
+  color: $Bowser-navbar-color;
+  display: flex;
+  position: relative;
+ position: fixed;
+  justify-content: space-between;
+  padding: 1%;
+  width: 98%;
+
+  // Brand
+.Bowser-navbar-brand {
+  color: $Bowser-navbar-brand-color;
+  font-size: 1.5rem;
+}
+
+// Navbar links
+.Bowser-navbar-nav {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Bowser-nav-item {
+  margin-left: 1rem;
+}
+.Bowser-nav-link {
+  color: $Bowser-navbar-link-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $Bowser-navbar-link-hover-color;
+  }
+}
+}
+//alerta
+.Bowser-alert {
+  padding: $Bowser-alert-padding;
+  border: $Bowser-alert-border-width solid;
+  border-radius: $Bowser-alert-border-radius;
+
+  &.cuerpo {
+    background: $Bowser-alert-cuerpo-background;
+    border-color: $Bowser-alert-cuerpo-border-color;
+    color: $Bowser-alert-cuerpo-text-color;
+  }
+
+  &.cabello {
+    background: $Bowser-alert-cabello-background;
+    border-color: $Bowser-alert-cabello-border-color;
+    color: $Bowser-alert-cabello-text-color;
+  }
+
+  &.utiles {
+    background: $Bowser-alert-utiles-background;
+    border-color: $Bowser-alert-utiles-border-color;
+    color: $Bowser-alert-utiles-text-color;
+  }
+  &.redondo{
+    border-radius: $Bowser-alert-border-radius-2;
+  }
+  &.imagen{
+    background-size: 10%;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT44CdmvHTbkIJYTePpJg_6maBBnEyS2ZBj6w&usqp=CAU");
+}
+}
+//badge
+.Bowser-badge {
+  display: inline-block;
+  padding: $Bowser-badge-padding;
+  font-size: $Bowser-badge-font-size;
+  font-weight: $Bowser-badge-font-weight;
+  color: $Bowser-badge-text-color;
+  background-color: $Bowser-badge-bg-color;
+  border-radius: $Bowser-badge-border-radius;
+  position: relative;
+
+  .Bowser-badge-dot {
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+    display: inline-block;
+    width: $Bowser-badge-dot-size;
+    height: $Bowser-badge-dot-size;
+    background-color: $Bowser-badge-dot-color;
+    border-radius: 50%;
+  }  
+  .Bowser-badge-cuat {
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+    display: inline-block;
+    width: $Bowser-badge-dot-size;
+    height: $Bowser-badge-dot-size;
+    background-color: $Bowser-badge-dot-color;
+  }  
+
+  &.redondo{
+    border-radius: $Bowser-badge-radius;
+  }
+}
+
+*{
+  margin: 0;
+}
